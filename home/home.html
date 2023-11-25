@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-    <link rel="stylesheet" href="/project-final/css/style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="../css/style.css">
 
+<!-- links  -->
 </head>
 <body class="bg-body-tertiary">
-    <nav class="navbar navbar-expand-lg fixed-top p-0 pt-lg-5 rounded-5" id="maineNav">
-        <div class="container bg-white p-4 px-3 px-lg-5">
+    <nav class="navbar  navbar-expand-lg fixed-top p-0 pt-lg-5 rounded-5" id="maineNav">
+        <div class="container bg-white p-4 px-3 px-lg-5 borderadius">
             <a href="" class="navbar-brand mt-auto">
                 <img src="../images/logo/logo.png" height="60" alt="">
             </a>
@@ -34,20 +33,20 @@
     <div class="d-none d-lg-block">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link fw-bold text-black fs-5" href="#">
               <i class="fas fa-search"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link fw-bold text-black fs-5" href="#">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
+            <a class="nav-link fw-bold text-black fs-5" href="#">Sign Up</a>
           </li>
         </ul>
       </div>
       <div class="d-none d-lg-block">
-        <a href="" class="btn btn-primary btn-primary-variant-1">
+        <a href="" class="btn btn-danger btn-primary-variant-1">
           Submit Propperty</a
         >
       </div>
@@ -81,9 +80,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -91,23 +88,303 @@
 
 
     </div>
-    </nav>
+    </nav> 
 <!-- nav end -->
+<!-- section start  -->
+<section id="homeTop">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 order-1 order-lg-0" id="homeTopContent">
+        <div
+          class="row justify-content-lg-center align-items-lg-center vh-100 bg-secondary bg-opacity-10"
+        >
+          <div class="col-12 col-lg-9 pt-3 pt-lg-0">
+            <p class="fs-3 fw-bold text-danger">Going Above and Beyond</p>
+            <p class="fs-1 fw-bolder">
+              Build Your Dream Home With
+              <span class="text-danger">Our Experience</span>
+            </p>
+
+            <div class="d-flex">
+              <div>
+                <i
+                  class="fa-regular fa-comments fa-2x text-danger me-3"
+                ></i>
+              </div>
+              <div>
+                Get Support <br />
+                <a
+                  href="mailto:Info@example.com"
+                  class="link-dark text-decoration-none fs-5 fw-bold"
+                  >Info@example.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 order-0 order-lg-1 p-0 position-relative">
+           
+        <div
+         class="position-relative"
+        >
+          <!-- Additional required wrapper -->
+          <div id="carouselExampleIndicators" class="carousel slide flex-column" data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/home/01.jpg" class="d-block vh-100" alt="..." data-bs-interval="5000">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/home/02.jpg"  class="d-block vh-100" alt="..." data-bs-interval="5000">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/home/03.jpg"  class="d-block vh-100" alt="..." data-bs-interval="5000">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  section end -->
+<!--  section2 st -->
+<section id="homeSearch" class="px-2 px-lg-5 m-3 position-relative">
+  <div class="container-fluid">
+
+    <!-- uls button -->
+    <ul class="nav nav-tabs ms-lg-5 d-flex align-items-center justify-content-center  " id="home-search-top" role="tablist">
+      <li class="nav-item" role="presentation">
+         <button class="nav-link active m-2 text-black btn-size" 
+        id="home-search-rent-top"
+         data-bs-target="#home-search-rent"
+         data-bs-toggle="pill"
+          type="button"
+           role="tab"
+           aria-controls="home-search-rent"
+            aria-selected="true">
+              Rent </button>
+      </li>
+      <li class="nav-item " role="presentation">
+        <button class="nav-link m-2 text-black btn-size" 
+       id="home-search-rent-top" 
+       data-bs-target="#home-search-buy"
+       data-bs-toggle="pill"
+        type="button" 
+        role="tab" 
+        aria-controls="home-search-buy"
+        aria-selected="false">
+            Buy</button>
+     </li>
+     <li class="nav-item " role="presentation">
+      <button class="nav-link m-2 text-black btn-size" 
+     id="home-search-rent-top"
+      data-bs-target="#home-search-sell"
+      data-bs-toggle="pill"
+      type="button"
+      role="tab"
+       aria-controls="home-search-sell"
+     aria-selected="false">
+          sell</button>
+   </li>
+    </ul>
+    <div class="tab-content p-5" id="home-search-tabContent">
+          <div class="tab-pane fade show active"
+          id="home-search-rent"
+          role="tabpanel"
+          aria-labelledby="home-search-rent-tab"
+          tabindex="0">
+          <form action="" class="row g-3 ">
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select name="" id="inputState" class="form-select p-3 shadow-sm">
+                <option value="">Choose...</option>
+                <option value="">....</option>
+              </select>
+            </div>
+
+            <div class="col-md-2">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control p-3 shadow-sm"
+                id="inputEmail4"
+              />
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2 align-self-end">
+              <button
+                type="submit"
+                class="btn btn-primary btn-danger w-100"
+              >
+                <i class="fas fa-search"></i> Search Now
+              </button>
+            </div>
+          </form>
+
+          </div>
 <!--  -->
+           <div          
+          class="tab-pane fade"
+          id="home-search-buy"
+          role="tabpanel"
+          aria-labelledby="home-search-buy-tab"
+          tabindex="0"
+          >
+                            ......
+          <form class="row g-3">
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          
+            <div class="col-md-2">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control p-3 shadow-sm"
+                id="inputEmail4"
+              />
+            </div>
+          
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          
+            <div class="col-md-2 align-self-end">
+              <button
+                type="submit"
+                class="btn btn-danger btn-danger-variant-1 w-100"
+              >
+                <i class="fas fa-search"></i> Search Now
+              </button>
+            </div>
+          </form>
+          <!--  -->
+          </div>
+          <div
+          class="tab-pane fade"
+          id="home-search-sell"
+          role="tabpanel"
+          aria-labelledby="home-search-sell-tab"
+          tabindex="0"
+          >
+          <form class="row g-3">
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          
+            <div class="col-md-2">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control p-3 shadow-sm"
+                id="inputEmail4"
+              />
+            </div>
+          
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select p-3 shadow-sm">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+          
+            <div class="col-md-2 align-self-end">
+              <button
+                type="submit"
+                class="btn btn-primary btn-danger w-100"
+              >
+                <i class="fas fa-search"></i> Search Now
+              </button>
+            </div>
+          </form>
+        
+            </div>
+          </section>
+          <!--  end section 2 -->
+          <!--  aboute -->
+          
 
-    
 
-
+          <!--  aboute ens -->
 
 
 
     <!--  links -->
-
+  
 
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/a052ba504f.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    </body>
 </html>

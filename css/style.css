@@ -1,0 +1,68 @@
+
+:root{
+    --danger: rgb(255, 56, 56);
+}
+
+
+
+
+.borderadius{border-radius: 15px;}
+
+
+#homeTopContent{ 
+    background-image: url(../images/home/HomeTopBg.jpg) !important;
+   
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--danger) !important;
+   
+   
+}
+
+.carousel-indicators :nth-child(1) {
+ 
+  
+    background-image: url('../images/home/01.jpg');;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--danger) !important  ;
+  }
+  .carousel-indicators :nth-child(2) {
+ 
+  
+    background-image: url('../images/home/02.jpg');;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--danger) !important  ;
+  }
+  .carousel-indicators :nth-child(3) {
+ 
+  
+    background-image: url('../images/home/03.jpg');;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid var(--danger) !important  ;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: opacity .6s ease;
+   
+}
+
+
+.btn-size{padding: 10px 15px !important; font-size: 1.5rem !important;}
