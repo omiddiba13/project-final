@@ -66,3 +66,104 @@
 
 
 .btn-size{padding: 10px 15px !important; font-size: 1.5rem !important;}
+
+.rounded-box {
+  text-decoration: none;
+  color: var(--bs-secondary-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #6c757d39;
+  border-radius: var(--bs-border-radius-xl);
+  background-color: #fff;
+  padding: 1.5rem 0;
+  box-shadow: 0 0 2rem #0000000f;
+  transition: all 500ms;
+}
+
+.rounded-box:hover {
+  border: 2px solid var(--danger);
+}
+
+#bgAbout{
+  background-image: url(../images/home/about-shape.png) !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* prelod */
+.z-index{z-index: 2;}
+
+.center111 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, rgba(254, 255, 255, 0.686), #f400f8);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+      transform: scale(0);
+  }
+
+  50% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(0);
+  }
+}
+
+#div123 {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
